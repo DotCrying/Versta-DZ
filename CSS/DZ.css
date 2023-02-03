@@ -1,0 +1,333 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1300px;
+    width: 100%;
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #213B7E;
+}
+
+.site-logo {
+    width: 47px;
+    height: 47px;
+    
+}
+
+.site-menu {
+    display: flex;
+    align-self: stretch;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.site-menu > li {
+    display: flex;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    background-color: #213B7E;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+.menu-link:hover {
+    background-color: #FFF;
+    color:#213B7E;
+    text-decoration: none;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    background-color:#EA5D21;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.active-link {
+    color: #213B7E;
+    background-color: #FFF;
+    text-decoration: none;
+}
+
+/* Popup */
+
+.login-popup {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    /* bottom: 0; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    box-sizing: border-box;
+    min-height: 418px;
+    background: #FFF;
+    background-color: #FFF;
+    border: 1px solid #213B7E;
+    max-width: 500px;
+    width: 100%;
+    padding: 26px 28px 56px;
+}
+
+.login-head {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    text-align: center;
+    margin: 16px 0 36px;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form > input {
+   width: 100%;
+   max-width: 415px;
+   min-height: 55px;
+   margin-bottom: 56px;
+   background: #FFFFFF;
+   border: 1px solid #808080;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 28px;
+   color: #808080;
+   padding: 0 14px;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 153px;
+    min-height: 50px;
+    background: #EA6113;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    border: 0;
+}
+
+.show-popup {
+    display: block;
+}
+
+/* Main */
+
+.main {
+    max-width: 911px;
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.classroom {
+    max-height: 316px;
+    height: 100%;
+    max-width: 523px;
+    width: 100%;
+}
+
+.maintext {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000
+}
+
+.suptext {
+    max-width: 634px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000
+}
+
+em {
+    color: #CF5510;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    width: 100%;
+    min-height: 60px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #213B7E;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.innopolis-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Media */
+
+@media (max-width: 930px) {
+    .maintext {
+        padding: 0 2%;
+    }
+
+    .suptext {
+        padding: 0 2%;
+        width: auto;
+    }
+
+    h2 {
+        padding: 0 2%;
+    }
+}
+
+@media (max-width: 705px) {
+   /* Header */
+    .site-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-link {
+        font-size: 18px;
+    }
+
+    .site-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .login-button {
+        font-size: 16px;
+        padding: 0 25px;
+        width: auto;
+        min-height: 45px;
+    }
+    /* Main */
+    .maintext {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .suptext{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    /* Footer */
+    .copyright {
+        font-size: 18px;
+    }
+
+    .innopolis-link {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Header */
+    .site-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-link {
+        font-size: 16px;
+    }
+
+    .site-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 0 20px;
+        width: auto;
+        min-height: 40px;
+    }
+    /* Main */
+    .maintext {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .suptext{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /* Footer */
+    .copyright {
+        font-size: 16px;
+    }
+
+    .innopolis-link {
+        font-size: 16px;
+    }
+}
