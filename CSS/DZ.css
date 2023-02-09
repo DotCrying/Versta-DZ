@@ -155,6 +155,8 @@ body {
 
 /* Main */
 
+/* Main page */
+
 .main {
     max-width: 911px;
     width: 100%;
@@ -199,6 +201,57 @@ em {
     color: #CF5510;
 }
 
+/* Students page */
+
+.main-2page {
+    max-width: 1242px;
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.maintext-2page {
+    margin: 36px 20px 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 36px;
+    color: #000
+}
+
+.students {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.student {
+    padding: 0 10px;
+}
+
+.student:nth-child(1) {
+    padding-left: 0;
+}
+
+/* .student-photo {
+
+} */
+
+.student-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin: 8px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* Footer */
 
 .footer {
@@ -232,6 +285,52 @@ em {
 }
 
 /* Media */
+
+@media(max-width: 1136px) {
+    .student:nth-child(5) {
+        padding-left: 0;
+    }
+
+    .student:nth-child(4) {
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 926px) {
+    .student:nth-child(4) {
+        padding-left: 0;
+    }
+
+    .student:nth-child(3) {
+        padding-right: 20px;
+    }
+
+    .student:nth-child(5) {
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 706px) {
+    .student:nth-child(3) {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+    .student:nth-child(2) {
+        padding-right: 20px;
+    }
+
+    .student:nth-child(4) {
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 483px) {
+    .student:nth-child(-n + 5) {
+        padding: 15px;
+        margin: 0 auto;
+    }
+}
 
 @media (max-width: 930px) {
     .maintext {
@@ -329,5 +428,16 @@ em {
 
     .innopolis-link {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 273px) {
+    .student:nth-child(-n + 5) {
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+    .student-name {
+        text-align: center;
     }
 }
