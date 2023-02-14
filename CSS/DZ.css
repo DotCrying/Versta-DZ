@@ -224,20 +224,19 @@ em {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .student {
     padding: 0 10px;
 }
 
-.student:nth-child(1) {
-    padding-left: 0;
+.student-photo {
+    max-width: 200px;
+    width: 100%;
+    max-height: 270px;
+    height: 100%;
 }
-
-/* .student-photo {
-
-} */
 
 .student-name {
     font-family: 'Roboto';
@@ -250,6 +249,76 @@ em {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+/* About page */
+
+.main-3page {
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.maintext-3page {
+    margin: 33px 0px 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.video {
+    max-width: 820px;
+    width: 100%;
+    max-height: 549.33px;
+    height: 100%;
+    padding: 0 0 15px;
+}
+
+/* Contacts page */
+
+.main-4page {
+    max-width: 1285px;
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.maintext-4page {
+    padding: 0 15%;
+    margin: 33px 0px 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.map {
+    max-width: 1268px;
+    width: 100%;
+    max-height: 370px;
+    height: 100%;
+}
+
+.subtitle {
+    padding: 0 15%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.suptext-4page {
+    padding: 0 15%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 /* Footer */
@@ -286,48 +355,9 @@ em {
 
 /* Media */
 
-@media(max-width: 1136px) {
-    .student:nth-child(5) {
-        padding-left: 0;
-    }
-
-    .student:nth-child(4) {
-        padding-right: 20px;
-    }
-}
-
-@media(max-width: 926px) {
-    .student:nth-child(4) {
-        padding-left: 0;
-    }
-
-    .student:nth-child(3) {
-        padding-right: 20px;
-    }
-
-    .student:nth-child(5) {
-        padding-right: 20px;
-    }
-}
-
-@media(max-width: 706px) {
-    .student:nth-child(3) {
-        padding-left: 0;
-        padding-right: 30px;
-    }
-
-    .student:nth-child(2) {
-        padding-right: 20px;
-    }
-
-    .student:nth-child(4) {
-        padding-right: 20px;
-    }
-}
-
 @media(max-width: 483px) {
     .student:nth-child(-n + 5) {
-        padding: 15px;
+        padding: 20px;
         margin: 0 auto;
     }
 }
@@ -343,6 +373,13 @@ em {
     }
 
     h2 {
+        padding: 0 2%;
+    }
+}
+
+@media (max-width: 850px) {
+    /* Main about */
+    .maintext-3page {
         padding: 0 2%;
     }
 }
@@ -379,6 +416,29 @@ em {
         font-size: 16px;
         line-height: 19px;
     }
+
+    /* Main about*/
+    .maintext-3page {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    /* Main contacts */
+    .maintext-4page {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .suptext-4page {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
     /* Footer */
     .copyright {
         font-size: 18px;
@@ -421,6 +481,24 @@ em {
         font-size: 14px;
         line-height: 18px;
     }
+
+/* Main contacts */
+    .maintext-4page {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .suptext-4page {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+
     /* Footer */
     .copyright {
         font-size: 16px;
