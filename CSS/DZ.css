@@ -27,7 +27,6 @@ body {
 .site-logo {
     width: 47px;
     height: 47px;
-    
 }
 
 .site-menu {
@@ -57,6 +56,9 @@ body {
     background-color: #FFF;
     color:#213B7E;
     text-decoration: none;
+    transition: .5s linear;
+    transition-property: background-color;
+    animation: pulse 1.5s infinite ease-in-out alternate;
 }
 
 .login-button {
@@ -349,8 +351,8 @@ em {
 
 .Im-photo {
     display: block;
-    max-width: 716px;
-    max-height: 518px;
+    max-width: 656px;
+    max-height: 458px;
     margin: auto;
     padding: 1%;
 }
@@ -366,6 +368,8 @@ em {
 .refer {
     font-style: italic;
     text-decoration: none;
+    transition: .4s linear;
+    transition-property: color;
 }
 .refer:visited { color: #EA5D21; }
 .refer:hover { color: #213B7E; }
@@ -574,3 +578,31 @@ em {
         text-align: center;
     }
 }
+
+/* Animation */
+.pulse {
+    animation: pulse 1s infinite linear alternate;
+  }
+  @keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+  }
+
+  .hithere {
+    animation: hithere 2.5s linear infinite;
+  }
+  @keyframes hithere {
+    30% { transform: scale(1); }
+    40%, 60% { transform: rotate(-20deg) scale(1); }
+    50% { transform: rotate(20deg) scale(1); }
+    70% { transform: rotate(0deg) scale(1); }
+    100% { transform: scale(1); }
+  }
+
+  .flash {
+    animation: flash 1.5s linear infinite alternate;
+  }
+  @keyframes flash {
+      from { opacity: 1; }	
+      to { opacity: 0; }
+  }
