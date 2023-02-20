@@ -188,7 +188,7 @@ h2 {
 }
 
 .suptext {
-    max-width: 634px;
+    /* max-width: 634px; */
     width: 100%;
     font-style: normal;
     font-weight: 400;
@@ -321,6 +321,55 @@ em {
     line-height: 21px;
 }
 
+/* Im page */
+
+.education {
+    list-style-image: url(../img/logoX.png);
+}
+
+.info {
+    max-width: 512px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.suptext-0page {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000
+}
+
+.abot-im {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Im-photo {
+    display: block;
+    max-width: 716px;
+    max-height: 518px;
+    margin: auto;
+    padding: 1%;
+}
+
+.Im-photo-2 {
+    display: none;
+    max-width: 716px;
+    max-height: 518px;
+    margin: auto;
+    padding: 1%;
+}
+
+.refer {
+    font-style: italic;
+    text-decoration: none;
+}
+.refer:visited { color: #EA5D21; }
+.refer:hover { color: #213B7E; }
+
 /* Footer */
 
 .footer {
@@ -374,6 +423,12 @@ em {
 
     h2 {
         padding: 0 2%;
+    }
+}
+
+@media (max-width: 905px) {
+    .info {
+        max-width: none;
     }
 }
 
