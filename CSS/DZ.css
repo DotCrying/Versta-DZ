@@ -58,7 +58,7 @@ body {
     text-decoration: none;
     transition: .5s linear;
     transition-property: background-color;
-    animation: pulse 1.5s infinite ease-in-out alternate;
+    animation: flash 1.25s linear infinite alternate
 }
 
 .login-button {
@@ -203,6 +203,12 @@ em {
     color: #CF5510;
 }
 
+.learning {
+    position: absolute;
+    bottom: 44%;
+    right: 20%;
+}
+
 /* Students page */
 
 .main-2page {
@@ -251,6 +257,12 @@ em {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.newbie {
+    position: relative;
+    top: -325px;
+    left: 115px;
 }
 
 /* About page */
@@ -372,7 +384,10 @@ em {
     transition-property: color;
 }
 .refer:visited { color: #EA5D21; }
-.refer:hover { color: #213B7E; }
+.refer:hover {
+    color: #213B7E;
+    animation: flash 1s linear infinite alternate
+}
 
 /* Footer */
 
@@ -408,6 +423,12 @@ em {
 
 /* Media */
 
+@media(max-width: 1107px) {
+    .student {
+        padding: 10px 10px;
+    }
+}
+
 @media(max-width: 483px) {
     .student:nth-child(-n + 5) {
         padding: 20px;
@@ -427,6 +448,10 @@ em {
 
     h2 {
         padding: 0 2%;
+    }
+
+    .learning {
+        display: none;
     }
 }
 
@@ -588,7 +613,7 @@ em {
     to { transform: scale(1.1); }
   }
 
-  .hithere {
+  .hithere:hover {
     animation: hithere 2.5s linear infinite;
   }
   @keyframes hithere {
