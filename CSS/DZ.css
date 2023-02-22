@@ -27,6 +27,7 @@ body {
 .site-logo {
     width: 47px;
     height: 47px;
+    animation: flash 1.5s linear infinite alternate;
 }
 
 .site-menu {
@@ -207,6 +208,7 @@ em {
     position: absolute;
     bottom: 44%;
     right: 20%;
+    animation: flash 1.5s linear infinite alternate;
 }
 
 /* Students page */
@@ -263,6 +265,7 @@ em {
     position: relative;
     top: -325px;
     left: 115px;
+    animation: flash 1.5s linear infinite alternate;
 }
 
 /* About page */
@@ -452,6 +455,7 @@ em {
 
     .learning {
         display: none;
+        
     }
 }
 
