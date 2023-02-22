@@ -386,10 +386,11 @@ em {
     text-decoration: none;
     transition: .4s linear;
     transition-property: color;
+    color: #EA5D21;
 }
-.refer:visited { color: #EA5D21; }
+.refer:visited { color: #213B7E; }
 .refer:hover {
-    color: #213B7E;
+    color: #EA5D21;
     animation: flash 1s linear infinite alternate
 }
 
