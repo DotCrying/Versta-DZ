@@ -73,6 +73,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .active-link {
@@ -87,8 +88,7 @@ body {
     display: none;
     position: absolute;
     z-index: 2;
-    /* bottom: 0; */
-    top: 50%;
+    top: 500px;
     left: 50%;
     transform: translate(-50%, -80%);
     box-sizing: border-box;
@@ -150,6 +150,7 @@ body {
     line-height: 21px;
     text-decoration: none;
     border: 0;
+    cursor: pointer;
 }
 
 .show-popup {

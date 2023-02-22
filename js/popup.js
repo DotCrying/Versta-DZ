@@ -1,5 +1,5 @@
-let loginButton = document.querySelector('.login-button');
-let loginPopUp = document.querySelector('.login-popup');
+const loginButton = document.querySelector('.login-button');
+const loginPopUp = document.querySelector('.login-popup');
 loginButton.addEventListener('click', showPopUp);
 function showPopUp(event) {
     event.preventDefault();
