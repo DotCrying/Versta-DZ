@@ -290,9 +290,12 @@ em {
 .video {
     max-width: 820px;
     width: 100%;
-    max-height: 549.33px;
+    min-height: 549.33px;
     height: 100%;
-    padding: 0 0 15px;
+}
+
+.frame-video {
+    padding: 0 0 25px;
 }
 
 /* Contacts page */
@@ -317,8 +320,12 @@ em {
 .map {
     max-width: 1268px;
     width: 100%;
-    max-height: 370px;
+    min-height: 370px;
     height: 100%;
+}
+
+.frame-map {
+    padding-left: .5%;
 }
 
 .subtitle {
@@ -427,6 +434,13 @@ em {
 }
 
 /* Media */
+
+@media (max-width: 1305px) {
+    .frame-map {
+        padding: 0px;
+    }
+    
+}
 
 @media(max-width: 1107px) {
     .student {
